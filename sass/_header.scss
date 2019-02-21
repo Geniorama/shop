@@ -1,0 +1,30 @@
+.top-bar{
+    background-color: $dark;
+    a {
+        color: #ccc;
+    }
+}
+
+.bar-nav{
+    background-color: #fff;
+
+    a{
+        color: $primary-color;
+        transition: all .3s;
+
+        &:hover{
+            color: $dark;
+        }
+    }
+
+
+    .num{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        font-size: .6rem;
+        padding-bottom: .5rem;
+        top: 0;
+        transform: translate(-3px, 3px);
+    }
+}

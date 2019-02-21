@@ -1,0 +1,4 @@
+#newsletter{
+    @include bg-images('bg-news.jpeg');
+    background-attachment: fixed;
+}

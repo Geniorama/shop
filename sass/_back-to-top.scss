@@ -1,0 +1,31 @@
+.back-to-top{
+    bottom: 5rem;
+    right: 1rem;
+    z-index: 10000;
+
+    .button-contact, .activate-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3s;
+    }
+    
+    .button-contact{
+        &.hide{
+            transform: translateX(200%);
+        }
+
+        &.show{
+            transform: translateX(0);
+        }
+    }
+
+    a{
+        display: block;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
