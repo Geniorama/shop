@@ -22,6 +22,10 @@
     }
 }
 
+@mixin trans ($element) {
+    transition: #{$element} .3s;
+}
+
 /*Header*/
 @import 'header';
 
@@ -32,7 +36,7 @@
 @import 'back-to-top';
 
 
-/*Buttons*/
+/*Buttons & links*/
 button{
     border: none;
 }
@@ -47,6 +51,14 @@ button{
     border-color: $primary-color;
 }
 
+a{
+    @include trans('all');
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 /*Forms*/
 
 .form-control{
@@ -56,21 +68,36 @@ button{
 
 .section-interior{
     padding: 4rem 0;
+}
 
-    &.primary p{
-        color: rgb(146, 146, 146);
+.primary{
+    h1, h2, h3, h4, h5{
+        color: $dark;
     }
 
-    &.secondary{
+    p{
+        color: $primary-text;
+    }
+}
 
-        h1, h2, h3, h4, h5{
-            color: #fff;
-        }
-        
-        p{
-            color: #ccc;
-        }
+.secondary{
 
+    h1, h2, h3, h4, h5{
+        color: #fff;
+    }
+    
+    p{
+        color: #ccc;
+    }
+
+}
+
+.title-heading{
+    background-color: #f8f8f8;
+    color: $dark;
+
+    h1{
+        font-size: 2rem;
     }
 }
 
@@ -80,4 +107,14 @@ button{
 /*Newslleter*/
 @import 'newslleter';
 
+/*Footer*/
+@import 'footer';
 
+
+/*==============CATEGORIES SHOP===============*/
+
+@import 'categories-shop';
+
+
+/*==============SINGLE PRODUCT===============*/
+@import 'single-product';

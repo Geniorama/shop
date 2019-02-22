@@ -1,0 +1,43 @@
+.footer{
+    background-color: $dark;
+    
+    .nav{
+        list-style: circle;
+        padding-left: 1rem;
+
+        &.social-nav{
+            list-style: none;
+            padding-left: 0;
+
+            .nav-link{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    h5{
+        
+        font-weight: normal;
+        color: #fff;
+    }
+
+    p{
+        font-size: .8rem;
+        color: #959595;
+    }
+
+    a{
+        font-size: .9rem;
+        padding-left: 0;
+        color: #959595;
+        transition: all .3s;
+
+        &:hover{
+            opacity: .6;
+        }
+    }
+
+    hr{
+        border-color: #454545;
+    }
+}

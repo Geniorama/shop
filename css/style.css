@@ -22,10 +22,16 @@ a {
 
 .bar-nav {
   background-color: #fff;
+  -webkit-box-shadow: 0px 3px 12px -4px #7a7a7a;
+  -moz-box-shadow: 0px 3px 12px -4px #7a7a7a;
+  box-shadow: 0px 3px 12px -4px #7a7a7a;
+  width: 100%;
+  z-index: 20000;
+  position: relative;
+  transition: all 2s;
 }
 .bar-nav a {
   color: #009EE1;
-  transition: all 0.3s;
 }
 .bar-nav a:hover {
   color: #151515;
@@ -40,6 +46,24 @@ a {
   transform: translate(-3px, 3px);
 }
 
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  animation: positioned 0.3s ease-in;
+}
+
+main {
+  transition: all 0.3s;
+}
+
+@keyframes positioned {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 0;
+  }
+}
 /*Carousel*/
 .owl-carousel figure {
   overflow: hidden;
@@ -64,6 +88,7 @@ a {
   transition: all 0.3s;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #fff;
 }
 .owl-carousel figure figcaption p {
   color: #ccc !important;
@@ -125,7 +150,7 @@ a {
   text-decoration: none;
 }
 
-/*Buttons*/
+/*Buttons & links*/
 button {
   border: none;
 }
@@ -140,6 +165,13 @@ button {
   border-color: #009EE1;
 }
 
+a {
+  transition: all 0.3s;
+}
+a:hover {
+  text-decoration: none;
+}
+
 /*Forms*/
 .form-control {
   border-radius: 0;
@@ -149,14 +181,27 @@ button {
 .section-interior {
   padding: 4rem 0;
 }
-.section-interior.primary p {
+
+.primary h1, .primary h2, .primary h3, .primary h4, .primary h5 {
+  color: #151515;
+}
+.primary p {
   color: #929292;
 }
-.section-interior.secondary h1, .section-interior.secondary h2, .section-interior.secondary h3, .section-interior.secondary h4, .section-interior.secondary h5 {
+
+.secondary h1, .secondary h2, .secondary h3, .secondary h4, .secondary h5 {
   color: #fff;
 }
-.section-interior.secondary p {
+.secondary p {
   color: #ccc;
+}
+
+.title-heading {
+  background-color: #f8f8f8;
+  color: #151515;
+}
+.title-heading h1 {
+  font-size: 2rem;
 }
 
 /*Products*/
@@ -242,6 +287,136 @@ button {
   background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
+}
+
+/*Footer*/
+.footer {
+  background-color: #151515;
+}
+.footer .nav {
+  list-style: circle;
+  padding-left: 1rem;
+}
+.footer .nav.social-nav {
+  list-style: none;
+  padding-left: 0;
+}
+.footer .nav.social-nav .nav-link {
+  font-size: 1.3rem;
+}
+.footer h5 {
+  font-weight: normal;
+  color: #fff;
+}
+.footer p {
+  font-size: 0.8rem;
+  color: #959595;
+}
+.footer a {
+  font-size: 0.9rem;
+  padding-left: 0;
+  color: #959595;
+  transition: all 0.3s;
+}
+.footer a:hover {
+  opacity: 0.6;
+}
+.footer hr {
+  border-color: #454545;
+}
+
+/*==============CATEGORIES SHOP===============*/
+.page-title {
+  background-color: #151515;
+  color: #929292;
+}
+.page-title h1 {
+  font-size: 1.5rem;
+}
+
+/*Sidebar shop*/
+.sidebar-shop p, .sidebar-shop label {
+  font-size: 0.8rem;
+  color: #929292;
+}
+.sidebar-shop h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.sidebar-shop .nav {
+  list-style: circle;
+  padding-left: 1rem;
+}
+.sidebar-shop .nav .nav-link {
+  color: #929292;
+  font-size: 0.9rem;
+}
+.sidebar-shop .nav .nav-link:hover {
+  color: #151515;
+}
+
+.category .nav-link {
+  padding: 0.2rem 0;
+}
+
+.filter-by-price .filter .bar {
+  width: 100%;
+  height: 7px;
+  background-color: #009EE1;
+  position: relative;
+}
+.filter-by-price .filter .point {
+  width: 15px;
+  height: 15px;
+  background-color: #151515;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+.filter-by-price .filter .point.end {
+  right: 1.2rem;
+}
+.filter-by-price .filter .point.start {
+  left: 1.2rem;
+}
+
+/*Content shop*/
+.content-shop p, .content-shop label {
+  color: #929292;
+}
+.content-shop select {
+  padding: 0 2rem 0 1rem;
+}
+.content-shop .num-show, .content-shop .num-results {
+  font-weight: bold;
+  color: #009EE1;
+}
+.content-shop .buttons {
+  bottom: 10px;
+}
+.content-shop .price {
+  font-size: 1.5rem;
+  color: #009EE1;
+}
+.content-shop a.link {
+  color: #151515;
+}
+.content-shop a.link:hover {
+  opacity: 0.6;
+}
+
+/*==============SINGLE PRODUCT===============*/
+.product-features li {
+  color: #929292;
+  line-height: 20pt;
+}
+
+.content-product .card-title {
+  color: #009EE1;
+  font-size: 2rem;
+}
+.content-product h4 {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

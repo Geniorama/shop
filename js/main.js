@@ -24,3 +24,12 @@ $(document).ready(function(){
 
     contacto();
 });
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 30) {
+       $('.bar-nav').addClass("nav-fixed");
+    } else {
+       $('.bar-nav').removeClass("nav-fixed");
+    }
+});

@@ -7,11 +7,16 @@
 
 .bar-nav{
     background-color: #fff;
+    -webkit-box-shadow: 0px 3px 12px -4px rgba(122,122,122,1);
+    -moz-box-shadow: 0px 3px 12px -4px rgba(122,122,122,1);
+    box-shadow: 0px 3px 12px -4px rgba(122,122,122,1);
+    width: 100%;
+    z-index: 20000;
+    position: relative;
+    transition: all 2s;
 
     a{
         color: $primary-color;
-        transition: all .3s;
-
         &:hover{
             color: $dark;
         }
@@ -26,5 +31,27 @@
         padding-bottom: .5rem;
         top: 0;
         transform: translate(-3px, 3px);
+    }
+}
+
+.nav-fixed{
+    position: fixed;
+    top: 0;
+    animation: positioned .3s ease-in;  
+}
+
+
+main{
+    @include trans('all');
+}
+
+
+@keyframes positioned{
+    from{
+        top: 0px;
+    }
+
+    to{
+        top: 0;
     }
 }

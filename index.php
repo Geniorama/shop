@@ -1,75 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Coiny|Muli:400,600,700|Questrial" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-4">
-                        <ul class="nav align-items-center">
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i> contacto@geniorama.co</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <ul class="nav align-items-center">
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bar-nav py-4">
-            <div class="container">
-                <div class="row justify-content-between text-center align-items-center">
-                    <div class="col-12 col-md-2">
-                        <a href="#"><img src="img/logo-geniorama.png" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Plantillas web</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Diseño digital</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Mockups</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <ul class="nav">
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-search"></i></a></li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="fas fa-shopping-cart position-relative"></i>
-                                    <span class="num position-absolute bg-light">1</span>
-                                </a>
-                            </li> 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!--Button back to top-->
-    <div class="back-to-top position-fixed">
-        <div class="contact">
-            <a href="#" class="text-center mb-2 button-contact hide"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="text-center mb-2 button-contact hide"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-center mb-2 button-contact hide"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-center mb-2 activate-contact"><i class="fas fa-headset"></i></a>
-        </div>
-        <a href="#" class="d-flex flex-column justify-content-center align-items-center text-center"><i class="fas fa-angle-up"></i></a>
-    </div>
+<?php include 'header.php'; ?>
 
     <main class="main-home">
         <div class="container-fluid p-0"></div>
@@ -128,7 +57,7 @@
                         <div class="item-owl p-3">
                             <figure class="position-relative">
                                 <img src="https://picsum.photos/500/650" alt="" class="img-fluid">
-                                <a href="">
+                                <a href="categories-shop.php">
                                     <figcaption class="p-5 text-light position-absolute d-flex flex-column justify-content-center align-items-center">
                                         <h4>Plantillas Web</h4>
                                         <hr>
@@ -200,7 +129,7 @@
                                 <div class="box-img position-relative">
                                     <img src="https://picsum.photos/500/400" alt="" class="img-fluid position-relative">
                                     <figcaption class="position-absolute d-flex justify-content-center align-items-end">
-                                        <a href="#" class="btn btn-primary"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
+                                        <a href="#" class="btn btn-light"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
                                         <a href="#" class="btn btn-success">Añadir al carrito <i class="fas fa-cart-plus d-xs-block d-lg-none"></i></a>
                                     </figcaption>
                                 </div>
@@ -218,7 +147,7 @@
                                 <div class="box-img position-relative">
                                     <img src="https://picsum.photos/500/400" alt="" class="img-fluid position-relative">
                                     <figcaption class="position-absolute d-flex justify-content-center align-items-end">
-                                        <a href="#" class="btn btn-primary"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
+                                        <a href="#" class="btn btn-light"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
                                         <a href="#" class="btn btn-success">Añadir al carrito <i class="fas fa-cart-plus d-xs-block d-lg-none"></i></a>
                                     </figcaption>
                                 </div>
@@ -235,7 +164,7 @@
                                 <div class="box-img position-relative">
                                     <img src="https://picsum.photos/500/400" alt="" class="img-fluid position-relative">
                                     <figcaption class="position-absolute d-flex justify-content-center align-items-end">
-                                        <a href="#" class="btn btn-primary"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
+                                        <a href="#" class="btn btn-light"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
                                         <a href="#" class="btn btn-success">Añadir al carrito <i class="fas fa-cart-plus d-xs-block d-lg-none"></i></a>
                                     </figcaption>
                                 </div>
@@ -252,7 +181,7 @@
                                 <div class="box-img position-relative">
                                     <img src="https://picsum.photos/500/400" alt="" class="img-fluid position-relative">
                                     <figcaption class="position-absolute d-flex justify-content-center align-items-end">
-                                        <a href="#" class="btn btn-primary"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
+                                        <a href="#" class="btn btn-light"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
                                         <a href="#" class="btn btn-success">Añadir al carrito <i class="fas fa-cart-plus d-xs-block d-lg-none"></i></a>
                                     </figcaption>
                                 </div>
@@ -269,7 +198,7 @@
                                 <div class="box-img position-relative">
                                     <img src="https://picsum.photos/500/400" alt="" class="img-fluid position-relative">
                                     <figcaption class="position-absolute d-flex justify-content-center align-items-end">
-                                        <a href="#" class="btn btn-primary"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
+                                        <a href="#" class="btn btn-light"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
                                         <a href="#" class="btn btn-success">Añadir al carrito <i class="fas fa-cart-plus d-xs-block d-lg-none"></i></a>
                                     </figcaption>
                                 </div>
@@ -286,7 +215,7 @@
                                 <div class="box-img position-relative">
                                     <img src="https://picsum.photos/500/400" alt="" class="img-fluid position-relative">
                                     <figcaption class="position-absolute d-flex justify-content-center align-items-end">
-                                        <a href="#" class="btn btn-primary"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
+                                        <a href="#" class="btn btn-light"><span>Previsualizar</span> <i class="fas fa-eye d-xs-block d-lg-none"></i></a>
                                         <a href="#" class="btn btn-success">Añadir al carrito <i class="fas fa-cart-plus d-xs-block d-lg-none"></i></a>
                                     </figcaption>
                                 </div>
@@ -336,11 +265,4 @@
         </div>
     </main>
 
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>

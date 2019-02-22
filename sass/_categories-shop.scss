@@ -1,0 +1,105 @@
+.page-title{
+    background-color: $dark;
+    color: $primary-text;
+    
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+/*Sidebar shop*/
+.sidebar-shop{
+    
+    p, label{
+        font-size: .8rem;
+        color: $primary-text;
+    }
+    
+
+    h3{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav {
+        list-style: circle;
+        padding-left: 1rem;
+
+        .nav-link{
+            color: $primary-text;
+            font-size: .9rem;
+
+            &:hover{
+                color: $dark;
+            }
+        }
+    }
+}
+
+.category{
+    .nav-link{
+        padding: .2rem 0;
+    }
+}
+
+.filter-by-price{
+    .filter{
+        .bar{
+            width: 100%;
+            height: 7px;
+            background-color: $primary-color;
+            position: relative;
+        }
+        .point{
+            width: 15px;
+            height: 15px;
+            background-color: $dark;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+
+            &.end{
+                right: 1.2rem;
+            }
+
+            &.start{
+                left: 1.2rem;
+            }
+        }
+    }
+}
+
+/*Content shop*/
+
+.content-shop{
+    p, label{
+        color: $primary-text;
+    }
+    
+    select{
+        padding: 0 2rem 0 1rem;
+    }
+
+    .num-show, .num-results{
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    .buttons{
+        bottom: 10px;
+    }
+
+    .price{
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+
+    a{
+        &.link{
+            color: $dark;
+            &:hover{
+                opacity: .6;
+            }
+        }        
+    }
+}
